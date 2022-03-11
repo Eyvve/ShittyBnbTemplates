@@ -1,0 +1,9 @@
+footer {
+  height: 350px;
+  /* border: 1px solid yellow; */
+  width: 100vw;
+  position: relative;
+  bottom: 0px;
+  left: -43%;
+  background-image: url("./assets/Footer/grass_mosaic_footer.png");
+}

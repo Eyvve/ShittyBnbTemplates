@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./connextion-style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Inscrivez vous !</title>
+</head>
+<body>
+    <!-- HEADER à retirer pour l'intégration -->
+    <header>
+        <a onmouseenter="playshootingstars()" class="header_side_button_container" href="./vente.html">
+            <img class="header_side_buttons" src="./assets/Header/vendre_un_bien.png">
+        </a>
+        <a href="/">
+            <img class="header_central_button" src="./assets/Header/header_Albnb.png">
+        </a>
+        <a onmouseenter="playshootingstars()" class="header_side_button_container" href="/">
+            <img class="header_side_buttons" src="./assets/Header/inscription_connexion.png">
+        </a>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="connexion"> 
+            <form action="verification.php" method="POST">
+                <h1>Connexion</h1>
+                
+                <span>
+                    <label>Pseudo</label>
+                    <input type="text" placeholder="Entrez le nom d'utilisateur" name="username" required>
+                </span>
+                <span>
+                    <label>MDP</label>
+                    <input type="password" placeholder="Entrez le mot de passe" name="password" required>
+                </span>
+                <a class="mdp-oublie" href="https://www.youtube.com/watch?v=OZw9L-PkRKs&ab_channel=HMomentPalli">mot de passe oublié</a>
+        
+                <input type="submit" id='submit' value='' >
+                <p class="entrez">↑ Entrez ↑</p>
+                <p>Je n’ai pas de compte : <a href="./inscription.html">Inscription</a></p>
+            </form>
+        </div>
+    </main>
+    <!-- FOOTER à retirer pour l'intégration -->
+    <footer>
+        
+    </footer>
+    
+</body>
+<script>
+    let shootingStars = new Audio('./assets/Audio/shooting-star-sound-effect.mp3');
+
+    function playshootingstars(){
+        shootingStars.play()
+    };
+</script>
+</html>
+
+
+
+

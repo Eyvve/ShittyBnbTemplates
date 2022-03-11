@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>[Inserer nom du bien]</title>
+</head>
+<body>
+    <!-- HEADER à retirer pour l'intégration -->
+    <header>
+        <a onmouseenter="playshootingstars()" class="header_side_button_container" href="./vente.html">
+            <img class="header_side_buttons" src="./assets/Header/vendre_un_bien.png">
+        </a>
+        <a href="/">
+            <img class="header_central_button" src="./assets/Header/header_Albnb.png">
+        </a>
+        <a onmouseenter="playshootingstars()" class="header_side_button_container" href="./connexion.html">
+            <img class="header_side_buttons" src="./assets/Header/inscription_connexion.png">
+        </a>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <section class="contain_all">
+            <img class="top_banner" src="./assets/Homepage/banner.png" alt="Publicité">
+            <div>
+                <h1 class="title">Cherchez un bien</h1>
+        
+                <div class="contain_searchbar">
+                    <div class="search_container">
+                        <h3> Recherche</h3>
+                        <input type="search" name="Rechercher" placeholder="Recherchez">
+                    </div>
+                    <button type="submit"> Trier </button>
+                    <button type="submit"> Reinitialiser</button>                
+                </div>
+            </div>
+        
+            <section class="content">
+                <aside class="container_filters">
+                    <h2 class="title_filters">Filtres</h2>
+                    <div class="container_list">
+                        <h3>Types de logement</h3>
+                        <ul class="logement">
+                            <li><input type="checkbox"> Maison</li>
+                            <li><input type="checkbox"> Appartement</li>
+                            <li><input type="checkbox"> Manoir</li>
+                            <li><input type="checkbox"> Château</li>
+                            <li><input type="checkbox"> Autre</li>
+                        </ul>
+                    </div>
+                    <div class="container_list">
+                        <h3>Types d'acquisition</h3>
+                        <ul class="acquisition">
+                            <li><input type="checkbox"> Achat</li>
+                            <li><input type="checkbox"> Viager</li>
+                        </ul>
+                    </div>
+                    <div class="container_list">
+                        <h3>Fourchette de prix</h3>
+                        <ul class="price">
+                            <li><input type="checkbox">  < 100€</li>
+                            <li><input type="checkbox"> 100€ - 100k€</li>
+                            <li><input type="checkbox"> 100k - 1m€</li>
+                            <li><input type="checkbox"> 1m€ - 100m€</li>
+                            <li><input type="checkbox">  > 1M€</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="validation">
+                        <input type="submit" value="Appliquer">
+                    </div>
+                </aside>
+        
+                <section class="container_offers">
+                    <div class="offer">
+                        <div class="offer_infos">
+                            <img class="offer_thumbnail">
+                            <div class="container_details">
+                                <p class="title_offer">[Nom du bien]</p>
+                                <p class="location">[ville - pays]</p>
+                                <p class="price_offer">Prix</p>
+                                <p>[type de logement - type d'acquisition]</p>
+                            </div>
+                        </div>
+                        <a class="see_more">
+                            <img src="./assets/Homepage/see_more_button.png" alt="En savoir plus">
+                        </a>
+                    </div>
+                </section>
+            </section>
+                <img src="./assets/Homepage/congrats_popup.png" alt="pop-up publicitaire" class="bottom_banner">
+        </section>
+    </main>
+    <!-- FOOTER à retirer pour l'intégration -->
+    <footer>
+        
+    </footer>
+    
+</body>
+<script>
+    let shootingStars = new Audio('./assets/Audio/shooting-star-sound-effect.mp3');
+
+    function playshootingstars(){
+        shootingStars.play()
+    };
+</script>
+</html>
+
+
